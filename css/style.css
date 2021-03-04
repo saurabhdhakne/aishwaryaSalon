@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('../images/parlor8.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Prata', serif;
+    text-shadow: 1px 0px 5px rgba(0, 0, 0, .7);
+}
+.shadowme{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+a{
+  text-decoration: none;
+  color: #ffff;        
+}
+ 
+@keyframes downbtn {
+    0% {padding-top:15px;}
+    50% {padding-top: 2px;}
+    99% {padding-top: 14px;}
+}
+.downbtn{
+    font-size: 4em;
+    color: rgb(226, 112, 255);
+    padding: 15px;
+    animation-name: downbtn;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+a:hover{
+  color: #ffffff;
+}
+.main{
+    min-height: 100vh;
+}
+#carouselExampleSlidesOnly{
+  position: absolute;
+  top: 0;
+  min-height: 100vh;
+  /* z-index: 3; */
+}
+.nav{
+  z-index: 99;
+  position: absolute;
+}
+.nav .d-flex{
+  overflow-x: auto;
+
+}
+.bnav{
+  position: fixed;
+  top: 0;
+  background: rgba(170, 43, 255, 0.8);
+  transition: background-color .5s  ;
+}
+.nav h5{
+  margin: 10px;
+  cursor: pointer;
+  transition: margin .5s  ;
+
+}
+.nav h5:hover{
+  margin:5px;
+  /* background: rgba(255, 91, 241, .7); */
+  /* box-shadow: 1px 1px 5px rgba(0, 0, 0, .7); */
+  border-radius: 2px;
+  transition: margin .5s  ;
+}
+.data{
+  position: absolute;
+  margin-top: 40vh;
+}
+.data h4{
+  color: snow;
+}
+.data h1{
+  font-size: 8vw;
+}
+.data .btn{
+  border-radius: 30px;
+  margin-top: 5vh;
+  cursor: pointer;
+}
+
+.main2{
+  min-height: 100vh;
+}
+
+.main2 .data{
+  background: rgba(247, 24, 210, 0.7);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, .7);
+  padding: 5vh 5%;
+  margin-top:20vh;
+  text-align: justify;
+}
+.main2 .data h1{
+  font-size: 3vw;
+}
+.main2 .img1{
+  width: 100%;
+  /* height: 200px; */
+  /* position: absolute; */
+  box-shadow: 1px 0 5px rgba(0, 0, 0, .7);
+  border-radius: 5px;
+}
+.main2 .img2{
+  width: 100%;
+  /* height: 200px; */
+  /* position: absolute; */
+  box-shadow: 1px 0 5px rgba(0, 0, 0, .7);
+  border-radius: 5px;
+}
+
+.main3{
+  /* min-height: 100vh; */
+  padding: 15vh 5%;
+  background: url('../images/parlor4.png');
+  /* background-attachment: fixed; */
+  /* background-position: center;
+  background-repeat: no-repeat; */
+  background-size: cover;
+}
+.main3 h1{
+  font-size: 6vw;
+}
+.main3 h5{
+  margin-bottom: 10vh;
+}
+.main3 .card p{
+  text-align: justify;
+}
+.main3 .card{
+  box-shadow:3px 0 15px rgba(247, 24, 199, 0.9);
+  background: rgba(55, 22, 59, 0.7);
+}
+.main3 .card img{
+  width: 50%;
+  margin:2vh 25%;
+}
+.main4{
+  padding: 15vh 5%;
+  background: url('../images/parlor3.png');
+  background-attachment: fixed; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+.main4 h1{
+  font-size: 5vw;
+  color: snow;
+}
+.main4 h5{
+  margin-bottom: 10vh;
+}
+.main4 .card{
+  padding: 5vh 5%;
+}
+.main4 .card img{
+  width: 50%;
+  margin:2vh 25%;
+}
+.main4 .card p{
+  text-align: justify;
+}
+.main4 .card{
+  box-shadow:3px 0 15px rgba(147, 24, 247, 0.9);
+  background: rgba(104, 34, 218, 0.7);
+}
+.main5{
+  padding: 15vh 5%;
+  background: rgba(104, 34, 218,.8);
+}
+.footer{
+  padding: 10vh 5% 20vh 5%;
+  background: rgba(47, 28, 78, 0.8);
+}
+.footer .logo{
+  width: 400px;
+}
+.footer .contacts{
+  margin-top: 15vh;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+  background: rgb(170, 43, 255);
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0),.7;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008bbae8;
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  z-index: 999;
+  transition: .5s ease;
+  overflow-y: auto;
+}
+.overlay .closebtn{
+  position: absolute;
+  top: 5vh;
+  right: 5%;
+}
+.overlay .text{
+  margin-top: 0vh;
+}
+.menu{
+  position: fixed;
+  bottom: 2px;
+  z-index: 99;
+  left: 50%;
+  transform: translate(-50%);
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+.menu{
+  display: block;
+}
+#bnav a{
+  display: none;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+  .main .data h4{
+    font-size: 4vw;
+  }
+  .main .data h1{
+    font-size: 12vw;
+  }
+  .main2 .data h3{
+    font-size: 5vw;
+  }
+  .main2 .data h1{
+    font-size: 10vw;
+  }
+  .main3 h1{
+    font-size: 10vw;
+  }
+  .main3 h5{
+    font-size: 3.5vw;
+  }
+  .main3 .card p{
+    font-size: 3vw;
+  }
+  .main4 h1{
+    font-size: 10vw;
+  }
+  .main4 h5{
+    font-size: 3.5vw;
+  }
+  .footer .contacts{
+      margin-top: 10vh;
+   }
+  .footer .logo{
+      width: 80%;
+  }
+}
