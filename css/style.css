@@ -303,4 +303,7 @@ a:hover{
   .footer .logo{
       width: 80%;
   }
+  footer{
+    height: 15vh;
+  }
 }
