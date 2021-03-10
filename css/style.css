@@ -1,13 +1,19 @@
 body{
     margin: 0;
     padding: 0;
-    background: url('../images/parlor8.png');
+    background: url('../images/bg1.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Prata', serif;
     text-shadow: 1px 0px 5px rgba(0, 0, 0, .7);
+}
+.baseNav a h5{
+  font-size: 1.1em;
+}
+.bnav a h5{
+  font-size: 1.1em;
 }
 .shadowme{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
@@ -119,7 +125,7 @@ a:hover{
 .main3{
   /* min-height: 100vh; */
   padding: 15vh 5%;
-  background: url('../images/parlor4.png');
+  background: url('../images/bg13.png');
   /* background-attachment: fixed; */
   /* background-position: center;
   background-repeat: no-repeat; */
@@ -135,8 +141,8 @@ a:hover{
   text-align: justify;
 }
 .main3 .card{
-  box-shadow:3px 0 15px rgba(247, 24, 199, 0.9);
-  background: rgba(55, 22, 59, 0.7);
+  box-shadow:3px 0 15px rgba(22, 245, 245, 0.9);
+  background: rgba(0, 140, 255, 0.7);
 }
 .main3 .card img{
   width: 50%;
@@ -144,7 +150,7 @@ a:hover{
 }
 .main4{
   padding: 15vh 5%;
-  background: url('../images/parlor3.png');
+  background: url('../images/bg14.png');
   background-attachment: fixed; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -229,8 +235,20 @@ a:hover{
   left: 50%;
   transform: translate(-50%);
   display: none;
+  background: rgba(255, 0, 170, 0.8);
+  padding: 1vh 20%;
 }
 @media only screen and (max-width: 768px) {
+  body{
+    background: url('../images/mob3.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .main{
+    min-height: 120vh;
+  }
 .menu{
   display: block;
 }
@@ -241,7 +259,9 @@ a:hover{
   width: 0px;
   height: 0px;
 }
-
+  .main2{
+    min-height: 110vh;
+  }
   .main .data h4{
     font-size: 4vw;
   }
@@ -254,6 +274,10 @@ a:hover{
   .main2 .data h1{
     font-size: 10vw;
   }
+  .main3{
+    background: url('../images/mob2.png');
+    background-size: cover;
+  }
   .main3 h1{
     font-size: 10vw;
   }
@@ -262,6 +286,10 @@ a:hover{
   }
   .main3 .card p{
     font-size: 3vw;
+  }
+  .main4{
+    background: url('../images/mob5.png');
+    background-size: cover;
   }
   .main4 h1{
     font-size: 10vw;
